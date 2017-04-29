@@ -1,6 +1,6 @@
 {
   "name": "polygon-parser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Parse article data from Polygon home page (http://www.polygon.com)",
   "main": "polygonparser.js",
   "repository": "jamesfmackenzie/polygon-parser",
