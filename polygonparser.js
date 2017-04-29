@@ -26,7 +26,7 @@ function parseFeaturedArticlesFromHtml(html) {
 	linkText = "",
 	parser = new htmlparser.Parser({
     	onopentag: function(name, attribs){
-       		if(name == "div" && attribs.class === "m-hero__slider"){
+       		if(name == "div" && attribs.class === "c-showcase-eight-up__main"){
 				//console.log("entering header section");
 				insideHeaderSection = true;
        		}
@@ -34,7 +34,7 @@ function parseFeaturedArticlesFromHtml(html) {
 				tagCount++;
 				//console.log(tagCount);
 			}
-			if (name == "h2" && insideHeaderSection && attribs.class === "m-hero__title") {
+			if (name == "h2" && insideHeaderSection && attribs.class === "c-entry-box--compact__title") {
 				//console.log("entering h2");
 				insideHeadlineTag = true;	
 			}
